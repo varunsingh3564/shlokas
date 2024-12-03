@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumar One', sans-serif;
+}
+body {
+    background: url('https://i.pinimg.com/736x/9b/5c/1a/9b5c1a91b70ba925d9f849e157d1fdf7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+.unselectable {
+    user-select: none;
+}
+.navbar {
+    position: fixed;
+    left: 1vw;
+    top: 0;
+    width: 10vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    padding: 30;
+    border-radius: 1vw;
+    z-index: 10;
+}
+.navbar ul {
+    list-style-type: none;
+}
+.navbar li {
+    padding: 1vw;
+    margin-bottom: 1vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.wallpaper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /*background: rgba(186,140,97, 0.7);*/
+}
+.shloka-card {
+    position: relative;
+    padding: 2vw;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1vw;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 5;
+    width: 70vw;
+}
+.shloka-box {
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1vw;
+    border-radius: 1vw;
+}
+.buttons button {
+    margin: 1vw;
+    padding: 0.5vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buttons button:hover {
+    background: white;
+}
